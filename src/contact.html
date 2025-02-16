@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=rocket_launch" />
+</head>
+<body class="font-mono">
+    <header class="bg-purple-400 shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <span class="material-symbols-outlined text-white text-4xl">rocket_launch</span>
+                <h1 class="text-2xl font-bold text-white tracking-wide">MONTHIRA TAPSAENG</h1>
+            </div>
+    
+            <!-- Navigation (ซ่อนในหน้าจอเล็ก) -->
+            <nav>
+                <ul class="flex space-x-6 text-lg md:flex hidden">
+                    <li><a href="index.html" class="text-white hover:text-gray-200 transition">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-gray-200 transition">About</a></li>
+                    <li><a href="project.html" class="text-white hover:text-gray-200 transition">Project</a></li>
+                    <li><a href="services.html" class="text-white hover:text-gray-200 transition">Services</a></li>  
+                    <li><a href="contact.html" class="text-white hover:text-gray-200 transition">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- ปุ่มเมนู (สำหรับโทรศัพท์มือถือ) -->
+            <button class="text-xl md:hidden text-white" id="menu-toggle">
+                ☰
+            </button>
+        </div>
+        
+        <!-- เมนูที่จะแสดงเมื่อกดปุ่ม ☰ (ซ่อนในขนาดหน้าจอใหญ่) -->
+        <div id="menu" class="hidden md:hidden bg-purple-400 text-white py-4 px-6">
+            <ul>
+                <li><a href="index.html" class="block hover:text-gray-200 transition py-2">Home</a></li>
+                <li><a href="about.html" class="block hover:text-gray-200 transition py-2">About</a></li>
+                <li><a href="project.html" class="block hover:text-gray-200 transition py-2">Project</a></li>
+                <li><a href="services.html" class="block hover:text-gray-200 transition py-2">Services</a></li>
+                <li><a href="contact.html" class="block hover:text-gray-200 transition py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <script>
+        // เมื่อกดปุ่มเมนู
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden'); // ทำให้เมนูแสดงหรือซ่อน
+        });
+    </script>
+
+<div class="flex justify-center items-center min-h-screen bg-blue-100">
+<div class="max-w-4xl w-full bg-purple-300 text-white p-8 rounded-lg flex flex-col md:flex-row gap-8">
+    <!-- Left Side -->
+    <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold">
+            Let’s <span class="text-green-400">Connect</span> & <span class="text-green-400">Collaborate</span>
+        </h2>
+        <p class="mt-2 text-gray-200">
+            “We are open to all types of contacts and cooperation. to create new opportunities and drive success together"
+        </p>
+        <div class="mt-6 space-y-4 mt-5">
+            <p class="flex items-center gap-2"><span>📞</span> 0954385710</p>
+            <p class="flex items-center gap-2"><span>📧</span>monthira.tapsaeng@gmail.com</p>
+            <p class="flex items-center gap-2"><span>📍</span> Prince of Songkla University, Surat Thani Campus
+
+                32/29 Moo 9 Makhamtia
+                Muang, Surat Thani, 84000</p>
+        </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="md:w-1/2 bg-[#4E2DA5] p-6 rounded-lg">
+        <form class="space-y-4">
+            <div class="flex gap-4">
+                <input type="text" placeholder="First Name *" class="w-1/2 p-3 bg-[#7857D6] text-white rounded-md outline-none placeholder-gray-300">
+                <input type="text" placeholder="Last Name *" class="w-1/2 p-3 bg-[#7857D6] text-white rounded-md outline-none placeholder-gray-300">
+            </div>
+            <div class="flex gap-4">
+                <input type="email" placeholder="Email *" class="w-1/2 p-3 bg-[#7857D6] text-white rounded-md outline-none placeholder-gray-300">
+                <input type="text" placeholder="Phone Number *" class="w-1/2 p-3 bg-[#7857D6] text-white rounded-md outline-none placeholder-gray-300">
+            </div>
+            <input type="text" placeholder="Subject *" class="w-full p-3 bg-[#7857D6] text-white rounded-md outline-none placeholder-gray-300">
+            <textarea placeholder="Message *" rows="4" class="w-full p-3 bg-[#7857D6] text-white rounded-md outline-none placeholder-gray-300"></textarea>
+            <button class="w-full bg-green-400 text-black py-2 rounded-md hover:bg-green-500 transition">Send Message</button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+<footer class="bg-purple-400 text-white text-sm py-5 px-4 md:px-20">
+    <div class="container mx-auto grid md:grid-cols-4 gap-8">
+        <!-- เมนูลิงก์ -->
+        <div class="hidden md:grid md:grid-cols-2 gap-8">
+            <!-- คอลัมน์ที่ 1 -->
+            <div class="p-2">
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                    <li><a href="project.html" class="hover:text-gray-300">Project</a></li>
+                </ul>
+            </div>
+        
+            <!-- คอลัมน์ที่ 2 -->
+            <div class="p-2">
+                <ul class="space-y-2">
+                    <li><a href="services.html" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="contace.html" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- Add friends on Line -->
+        <div class="text-center">
+            <h3 class="text-lg font-semibold">Add me on Line</h3>
+            <img src="https://scontent.fbkk12-2.fna.fbcdn.net/v/t39.30808-6/477731822_1657252508202141_6196973549631178662_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFqc3dWKIalL60kWfB7G3PAhecaFo8hbm2F5xoWjyFubS6ofpwql_FqAcFAXHp6gCI2fhrhk9smCiuhgl27F2Dd&_nc_ohc=M7gkpRbvmNoQ7kNvgGbXC4M&_nc_oc=AdiUksSWeQsG9CjJ55gSdb3MdzzqepjseIDqxR-Zs2cj-V8aFjDwDKUlAojLy5Vl5dc&_nc_zt=23&_nc_ht=scontent.fbkk12-2.fna&_nc_gid=AkUYy12n9PKoFZB7QD7qxPn&oh=00_AYBhyJRz8DVIAQXWtFSbMA5DUEL6UanlA5IQ6BGvAk_iiQ&oe=67B3D8C7" alt="Line Profile" class="w-16 h-16 mx-auto mt-2">
+            <p class="text-sm mt-2">ID:095-438-5710</p>
+        </div>
+
+        <!-- Address -->
+        <div class="hidden md:block">
+            <h3 class="text-lg font-semibold">Address</h3>
+            <p class="text-sm text-write-300">Prince of Songkla University, Surat Thani Campus</p>
+            <p class="mt-2 text-sm text-write-300">32/29 Moo 9 Makhamtia <br> Muang, Surat Thani, 84000</p>
+            <p class="text-sm text-write-300 mt-2">Tell: 095-438-5710</p>
+        </div>
+
+        <div class="w-full p-5 text-2xl  text-center">
+            <div class="d-flex justify-content-center items-center">
+                <i class="fa-brands fa-instagram social"></i>
+                <i class="fa-brands fa-twitter social"></i>
+                <i class="fa-brands fa-facebook social"></i>
+                <i class="fa-solid fa-earth-americas social"></i>
+            </div>
+        </div>
+            </footer>
+    
+
+    </body>
+    </html>
+
+
+
+

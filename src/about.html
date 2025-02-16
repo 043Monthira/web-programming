@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=rocket_launch" />
+   
+  
+</head>
+<body class="font-mono  ">
+    <header class="bg-purple-400 shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <span class="material-symbols-outlined text-white text-4xl">rocket_launch</span>
+                <h1 class="text-2xl font-bold text-white tracking-wide">MONTHIRA TAPSAENG</h1>
+            </div>
+    
+            <!-- Navigation (ซ่อนในหน้าจอเล็ก) -->
+            <nav>
+                <ul class="flex space-x-6 text-lg md:flex hidden">
+                    <li><a href="index.html" class="text-white hover:text-gray-200 transition">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-gray-200 transition">About</a></li>
+                    <li><a href="project.html" class="text-white hover:text-gray-200 transition">Project</a></li>
+                    <li><a href="services.html" class="text-white hover:text-gray-200 transition">Services</a></li>  
+                    <li><a href="contact.html" class="text-white hover:text-gray-200 transition">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- ปุ่มเมนู (สำหรับโทรศัพท์มือถือ) -->
+            <button class="text-xl md:hidden text-white" id="menu-toggle">
+                ☰
+            </button>
+        </div>
+        
+        <!-- เมนูที่จะแสดงเมื่อกดปุ่ม ☰ (ซ่อนในขนาดหน้าจอใหญ่) -->
+        <div id="menu" class="hidden md:hidden bg-purple-400 text-white py-4 px-6">
+            <ul>
+                <li><a href="index.html" class="block hover:text-gray-200 transition py-2">Home</a></li>
+                <li><a href="about.html" class="block hover:text-gray-200 transition py-2">About</a></li>
+                <li><a href="project.html" class="block hover:text-gray-200 transition py-2">Project</a></li>
+                <li><a href="services.html" class="block hover:text-gray-200 transition py-2">Services</a></li>
+                <li><a href="contact.html" class="block hover:text-gray-200 transition py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <script>
+        // เมื่อกดปุ่มเมนู
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden'); // ทำให้เมนูแสดงหรือซ่อน
+        });
+    </script>
+
+<div class="mx-auto my-5 p-6 bg-white">
+        <div class="md:ml-8 text-center md:text-left ">
+            <h3 class="text-2xl md:text-3xl font-bold text-blue-800 ">"ยินดีต้อนรับสู่หน้าแนะนำตัวของฉัน!" </h3>
+            <p class="text-sm md:text-sm text-black mt-2">
+              สวัสดีค่ะ ฉันชื่อนางสาวมลธิรา ทัพแสง ปัจจุบันเป็นนักศึกษา คณะวิทยาศาสตร์เทคโนโลยีอุตสาหกรรม สาขา เทคโนโลยีสารสนเทศ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี  </p>
+            <p  class="text-sm md:text-sm text-black mt-2">ฉันมีความสนใจในด้านการเขียน web programming และมีประสบการณ์ ทักษะที่คมี เช่น การเขียนโปรแกรมด้วย java,html,css และการใช้ canva figma</p>    
+            <p class="text-sm md:text-lg text-purple-400 mt-5 "> "ฉันมุ่งมั่นที่จะพัฒนาทักษะของตัวเองและสร้างสรรค์ผลงานที่มีคุณค่า พร้อมทั้งหวังว่าจะสามารถนำความรู้ไปใช้ให้เกิดประโยชน์กับสังคมและอุตสาหกรรมในอนาคต"</p>
+        </div>
+</div>
+
+
+<div class="mx-auto my-5 p-6 bg-gray-100">
+    <div class="flex flex-col md:flex-row-reverse items-center">
+        <!-- รูปภาพ -->
+        <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t39.30808-6/472917074_1634304177163641_628674347920365394_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH-BLAREsJWwLppTdRvqxxv34JIBdj88iTfgkgF2PzyJM30iWI7oOJC5YvNMgsrTq0sb9DXM_oKybS2-yBuDP8L&_nc_ohc=GuyIdlRta9MQ7kNvgFylL90&_nc_oc=Adg7O7hBXMzYU7Jzue_gWF8F36viDTwoUBq6U0GzwpI4TLoZXy-uN0l3yFy5mqWjS4Y&_nc_zt=23&_nc_ht=scontent.furt2-1.fna&_nc_gid=AQLDQ3JtNXA8CaVeNT7IbbY&oh=00_AYA6j_ksOmelg6J_0P1pfKtM6BuR9PDg9-t-5QxvVt6Zog&oe=67B4F254" 
+             alt="Profile" class="w-80 h-100 mx-10 mb-4 md:mb-0">
+        
+        <!-- ข้อความ -->
+        <div class="md:mr-8 ml-8">
+            <h3 class="text-2xl md:text-3xl font-bold text-pink-500 ">Persanal Profile</h3>
+            <p class="text-sm md:text-sm text-black mt-2">
+               ชื่อ:นางสาวมลธิรา ทัพแสง  ชื่อเล่น:นานา(เพื่อนเรียก นาน่า)
+            </p>
+            <p class="text-sm md:text-sm text-black mt-2">
+                เกิดวันเสาร์ที่ 10 เมษายน พ.ศ. 2547 ปีวอก ปัจจุบันอายุ 20 ปี
+             </p>
+             <p class="text-sm md:text-sm text-black mt-2">
+                เชื้อชาติ:ไทย สัญชาติ:ไทย ศาสนา:อิสลาม
+             </p>
+             <p class="text-sm md:text-sm text-black mt-2">
+               ที่อยู่:บ้านเลขที่ 4 หมู่ที่ 2 ตำบลขอนคลาน อำเภอทุ่งหว้า จังหวัดสตูล 91120
+                </p>
+            <p class="text-sm md:text-sm text-black mt-2">
+               ตอนนี้กำลังศึกษาระดับปริญญาตรี คณะวิทยาศาสตร์เทคโลยีอุตสาหกรรม สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี 
+               
+            </p>
+            <p class="text-sm md:text-sm text-black mt-2">
+               งานอดิเรก:ฟังเพลง ถ่ายรูป แต่งรูป อ่านหนังสือ
+             </p>
+             <p class="text-sm md:text-sm text-black mt-2">
+                ความสามารถพิเศษ:เล่นกีฬา
+              </p>
+              <p class="text-sm md:text-sm text-black mt-2">
+              คติประจำใจ:ความภูมิใจสูงสุดในชีวิต คือ การประสบความสำเร็จในสิ่งที่คนรอบข้างเชื่อว่าคุณทำไม่ได้
+              </p>
+              <h3 class="text-2xl md:text-xl font-bold text-blue-400 mt-5">ช่องทางการติดต่อ</h3>
+              <p class="text-sm md:text-sm text-black mt-2">
+                facebook:Monthira Tapseang
+                </p>
+              <p class="text-sm md:text-sm text-black mt-2">
+                    ID Line:0954385710
+                 </p>
+                 <p class="text-sm md:text-sm text-black mt-2">
+                    Tell:0954385710
+                 </p>
+                 <p class="text-sm md:text-sm text-black mt-2">
+                   Email:monthira.tapsaeng@gmail.com
+                 </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-pink-100  shadow-lg w-full mx-auto my-5 p-6 ">
+    <!-- หัวข้อ Education -->
+    <div class="flex items-center space-x-2 mb-4  ml-8">
+        <div class="bg-red-600 p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v7m0 0a4 4 0 01-4-4m4 4a4 4 0 004-4" />
+            </svg>
+        </div>
+        <h2 class="text-3xl font-semibold text-pink-600">Education</h2>
+    </div>
+
+    <!-- รายการการศึกษา -->
+    <div class="space-y-4 ml-8">
+        <div class="flex justify-between items-center ">
+            <div>
+                <h3 class="font-semibold text-pink-400">จบการศึกษาระดับชั้นอนุบาลโรงเรียนบ้านราใว</h3>
+                <p class="text-sm text-gray-500">ตำบลขอนคลาน อำเภอทุ่งหว้า จังหวัดสตูล </p>
+            </div>
+            
+        </div>
+
+        <div class="flex justify-between items-center">
+            <div>
+                <h3 class="font-semibold text-pink-400">จบการศึกษาระดับชั้นประถมศึกษาที่โรงเรียนอัลฟุรกอนวิทยา</h3>
+                <p class="text-sm text-gray-500">ตำบลนาทอน อำเภอทุ่งหว้า จังหวัดสตูล</p>
+            </div>
+          
+        </div>
+        <div class="flex justify-between items-center">
+            <div>
+                <h3 class="font-semibold text-pink-400">จบการศึกษาระดับชั้นมัธยมศึกษาที่โรงเรียนธรรมศาสน์วิทยา</h3>
+                <p class="text-sm text-gray-500">ตำบลควนสตอ อำเภอควนโดน จังหวัดสตูล</p>
+            </div>
+        </div>
+            <div class="flex justify-between items-center">
+                <div>
+                    <h3 class="font-semibold text-pink-400">ปัจจุบันกำลังศึกษา คณะวิทยาศาสตร์เทคโลยีอุตสาหกรรม สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี</h3>
+                    <p class="text-sm text-gray-500">ตำบลมะขามเตี้ย อำเภอเมืองสุราษฎร์ธานี จังหวัดสุราษฎร์ธานี</p>
+                </div>
+              
+            </div>
+        </div>
+  
+</div>
+
+
+
+
+<footer class="bg-purple-400 text-white text-sm py-5 px-4 md:px-20">
+    <div class="container mx-auto grid md:grid-cols-4 gap-8">
+        <!-- เมนูลิงก์ -->
+        <div class="hidden md:grid md:grid-cols-2 gap-8">
+            <!-- คอลัมน์ที่ 1 -->
+            <div class="p-2">
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                    <li><a href="portfolio.html" class="hover:text-gray-300">Project</a></li>
+                </ul>
+            </div>
+        
+            <!-- คอลัมน์ที่ 2 -->
+            <div class="p-2">
+                <ul class="space-y-2">
+                    <li><a href="portfolio.html" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- Add friends on Line -->
+        <div class="text-center">
+            <h3 class="text-lg font-semibold">Add me on Line</h3>
+            <img src="https://scontent.fbkk12-2.fna.fbcdn.net/v/t39.30808-6/477731822_1657252508202141_6196973549631178662_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFqc3dWKIalL60kWfB7G3PAhecaFo8hbm2F5xoWjyFubS6ofpwql_FqAcFAXHp6gCI2fhrhk9smCiuhgl27F2Dd&_nc_ohc=M7gkpRbvmNoQ7kNvgGbXC4M&_nc_oc=AdiUksSWeQsG9CjJ55gSdb3MdzzqepjseIDqxR-Zs2cj-V8aFjDwDKUlAojLy5Vl5dc&_nc_zt=23&_nc_ht=scontent.fbkk12-2.fna&_nc_gid=AkUYy12n9PKoFZB7QD7qxPn&oh=00_AYBhyJRz8DVIAQXWtFSbMA5DUEL6UanlA5IQ6BGvAk_iiQ&oe=67B3D8C7" alt="Line Profile" class="w-16 h-16 mx-auto mt-2">
+            <p class="text-sm mt-2">ID:095-438-5710</p>
+        </div>
+
+        <!-- Address -->
+        <div class="hidden md:block">
+            <h3 class="text-lg font-semibold">Address</h3>
+            <p class="text-sm text-write-300">Prince of Songkla University, Surat Thani Campus</p>
+            <p class="mt-2 text-sm text-write-300">32/29 Moo 9 Makhamtia <br> Muang, Surat Thani, 84000</p>
+            <p class="text-sm text-write-300 mt-2">Tell: 095-438-5710</p>
+        </div>
+
+        <div class="w-full p-5 text-2xl  text-center">
+            <div class="d-flex justify-content-center items-center">
+                <i class="fa-brands fa-instagram social"></i>
+                <i class="fa-brands fa-twitter social"></i>
+                <i class="fa-brands fa-facebook social"></i>
+                <i class="fa-solid fa-earth-americas social"></i>
+            </div>
+        </div>
+            </footer>
+    
+
+    </body>
+    </html>
+
+
+
+
